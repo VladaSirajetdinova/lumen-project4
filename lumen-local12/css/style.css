@@ -965,3 +965,51 @@ main .section {
 .header__mobilemenu.show ~ .btn-burger {
     display: none;
 }
+
+/* --- Исправления для мобильной версии (до 640px) --- */
+@media (max-width: 640px) {
+    /* 1. Исправляем текст "О нас" и картинку */
+    .about__intro {
+        flex-direction: column; /* Ставим картинку и текст друг под другом */
+        gap: 20px;              /* Отступ между ними */
+    }
+
+    .about__text {
+        width: 100%;            /* Текст на всю ширину */
+        font-size: 16px;        /* Уменьшаем шрифт */
+        line-height: 1.4;
+    }
+
+    /* 2. Исправляем карточки с цифрами (10 лет, 24 месяца...) */
+    .about__benefits {
+        gap: 12px;              /* Уменьшаем отступы между карточками */
+    }
+
+    .benefit__card {
+        width: calc((100% - 12px) / 2); /* Ровно 2 карточки в ряд */
+        padding: 16px 10px;     /* Уменьшаем внутренние отступы */
+    }
+
+    .benefit__text {
+        font-size: 14px;        /* Уменьшаем текст в карточках */
+        line-height: 1.3;
+    }
+
+    /* 3. Чиним шапку (логотип и бургер), чтобы они не наезжали друг на друга */
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; /* Важно для бургера */
+    }
+
+    .header__title {
+        font-size: 28px; /* Уменьшаем логотип */
+    }
+
+    .btn-burger {
+        display: block; /* Показываем бургер */
+        z-index: 100;   /* Поднимаем его наверх, чтобы был кликабельным */
+        position: relative;
+    }
+}
