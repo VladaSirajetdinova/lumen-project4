@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen. — Светильники</title>
+    <!-- Подключение шрифтов (если у тебя есть папка fonts, раскомментируй строку ниже) -->
+    <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__title" style="text-decoration: none;">Lumen.</a>
+            
+            <!-- Десктопное меню -->
+            <nav class="header__mainmenu">
+                <ul>
+                    <li><a class="mainmenu__link" href="#about">О нас</a></li>
+                    <li><a class="mainmenu__link" href="#catalog">Каталог</a></li>
+                    <li><a class="mainmenu__link" href="#feedback">Обратная связь</a></li>
+                </ul>
+            </nav>
+
+            <!-- Мобильное меню (появляется при клике на бургер) -->
+            <nav class="header__mobilemenu" id="mobileMenu">
+                <button class="btn-close" aria-label="Закрыть меню">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul>
+                    <li><a class="mobilemenu__link" href="#about">О нас</a></li>
+                    <li><a class="mobilemenu__link" href="#catalog">Каталог</a></li>
+                    <li><a class="mobilemenu__link" href="#feedback">Обратная связь</a></li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка бургер для мобилок -->
+            <button class="btn-burger" aria-label="Открыть меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция Баннер -->
+        <section class="section banner" id="banner">
+            <div class="container banner__container">
+                <div class="banner__content">
+                    <h1 class="banner__title">Lumen<br>Shape</h1>
+                    <button class="banner__btn">связаться</button>
+                </div>
+                <!-- Замени путь на свою картинку лампы -->
+                <img class="banner__img" src="img/banner.png" alt="Красная лампа">
+            </div>
+        </section>
+
+        <!-- Секция О нас -->
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="about__title">О нас</h2>
+                
+                <div class="about__intro">
+                    <img class="about__img" src="img/about.png" alt="Гриб-лампа">
+                    <p class="about__text">
+                        Мы создаем современные светильники, объединяя стильный дизайн, качество и надежность. Наша продукция поможет создать пространство уютным, функциональным и комфортным для жизни.
+                    </p>
+                </div>
+
+                <div class="about__benefits">
+                    <div class="benefit__card"><p class="benefit__text">10 лет<br>на рынке освещения</p></div>
+                    <div class="benefit__card"><p class="benefit__text">24<br>месяца гарантии</p></div>
+                    <div class="benefit__card"><p class="benefit__text">100+<br>уникальных моделей</p></div>
+                    <div class="benefit__card"><p class="benefit__text">98%<br>довольных покупателей</p></div>
+                    <div class="benefit__card"><p class="benefit__text">5000+<br>проданных ламп</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Каталог -->
+        <section class="section catalog" id="catalog">
+            <div class="container">
+                <h2 class="catalog__title">Каталог</h2>
+                
+                <!-- Обертка для слайдера (чтобы прятать вылезающие карточки) -->
+                <div class="catalog__wrapper">
+                    <div class="catalog__container">
+                        
+                        <!-- Карточка 1 -->
+                        <div class="catalog__card">
+                            <button class="card__btn-add">+</button>
+                            <img class="card__img" src="img/1.png" alt="Лампа">
+                            <h3 class="card__title">Where Shadows Learn to Dance</h3>
+                            <p class="card__price">2000 &#8381;</p>
+                            <button class="card__btn">связаться</button>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="catalog__card">
+                            <button class="card__btn-add">+</button>
+                            <img class="card__img" src="img/2.png" alt="Лампа">
+                            <h3 class="card__title">Where Shadows Learn to Dance</h3>
+                            <p class="card__price">2000 &#8381;</p>
+                            <button class="card__btn">связаться</button>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="catalog__card">
+                            <button class="card__btn-add">+</button>
+                            <img class="card__img" src="img/3.png" alt="Лампа">
+                            <h3 class="card__title">Still</h3>
+                            <p class="card__price">2000 &#8381;</p>
+                            <button class="card__btn">связаться</button>
+                        </div>
+
+                        <!-- Карточка 4 -->
+                        <div class="catalog__card">
+                            <button class="card__btn-add">+</button>
+                            <img class="card__img" src="img/4.png" alt="Лампа">
+                            <h3 class="card__title">Dusk</h3>
+                            <p class="card__price">2000 &#8381;</p>
+                            <button class="card__btn">связаться</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Кнопки управления слайдером -->
+                <div class="catalog__button">
+                    <button class="catalog__btn" aria-label="Назад">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto;">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="catalog__btn" aria-label="Вперед">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto;">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Обратная связь -->
+        <section class="section feedback" id="feedback">
+            <div class="container">
+                <div class="feedback__intro">
+                    <h2 class="feedback__title">Остались<br>вопросы?</h2>
+                    <img class="feedback__img" src="img/feedback.png" alt="Разноцветные лампы">
+                </div>
+
+                <div class="feedback__main">
+                    <form class="feedback__form" action="">
+                        <div class="form__item">
+                            <input class="form__elem form__input" type="text" name="name" placeholder="Имя">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="form__item">
+                            <input class="form__elem form__input" type="tel" name="phone" placeholder="Телефон">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.4704 21.7893 20.9983 21.4142 21.3734C21.0391 21.7485 20.5113 21.9591 19.96 21.9591C16.3492 21.7343 12.8827 20.4731 9.94995 18.3191C7.20119 16.3161 4.99721 13.6061 3.57995 10.4591C2.81636 8.89366 2.40953 7.18979 2.38995 5.45911C2.38995 4.90779 2.60057 4.37897 2.9757 4.00389C3.35083 3.62882 3.87978 3.4182 4.42995 3.4182H7.42995C8.32995 3.4182 9.09995 4.0882 9.20995 4.9782C9.2878 5.62718 9.43834 6.26665 9.65995 6.8782C9.81679 7.33146 9.69391 7.83118 9.34995 8.1782L7.97995 9.5482C9.19024 11.6892 10.9217 13.4207 13.0627 14.631L14.4327 13.261C14.7797 12.917 15.2795 12.7941 15.7327 12.951C16.3442 13.1726 16.9837 13.3231 17.6327 13.401C18.5227 13.511 19.1927 14.281 19.1927 15.181V18.181C19.1927 18.7312 18.9821 19.2594 18.6072 19.6345C18.2322 20.0096 17.7031 20.2201 17.1527 20.2191" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="form__item">
+                            <input class="form__elem form__input" type="email" name="mail" placeholder="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="form__item">
+                            <textarea class="form__elem form__textarea" name="message" placeholder="Сообщение"></textarea>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15C21 16.1046 20.1046 17 19 17H7L3 21V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <button class="form__elem form__submit" type="submit">отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <!-- Секция Контакты -->
+        <section class="section contacts">
+            <div class="container">
+                <a href="#" class="footer__title" style="text-decoration: none; display: block;">Lumen.</a>
+                
+                <div class="contacts__content">
+                    <p class="contacts__desc">
+                        Создаём уют с помощью света. Дизайнерские светильники, которые будут вдохновлять каждый день, кто ценит детали.
+                    </p>
+                    
+                    <div class="contacts__info">
+                        <a href="tel:+79991234567" class="contacts__link">+7 (999) 123-45-67</a>
+                        <a href="mailto:hello@lumen.ru" class="contacts__link">hello@lumen.ru</a>
+                        <p class="contacts__text">Бесплатная доставка<br>по РФ от 5000 ₽</p>
+                        <p class="contacts__text">Обратная связь 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Копирайт -->
+        <section class="section copyright" style="margin: 0;">
+            <div class="container">
+                <p class="copyright__text">© 2024 Lumen. Все права защищены.</p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
